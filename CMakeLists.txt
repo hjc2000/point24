@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-include($ENV{cpp_lib_build_scripts_path}/cmake-module/setup.cmake)
+include(${cpp_lib_build_scripts_path}/cmake-module/setup.cmake)
 include(target_import_boost)
 include(target_import_qt)
 include(target_import_jccpp)
@@ -17,3 +17,5 @@ target_import_src(${ProjectName})
 target_import_jccpp(${ProjectName} PUBLIC)
 target_import_base(${ProjectName} PUBLIC)
 target_import_cli11(${ProjectName} PUBLIC)
+
+set(CMAKE_INSTALL_PREFIX ${cpp_lib_build_scripts_path}/${platform}/.libs/${ProjectName}/)
