@@ -1,0 +1,5 @@
+/.vs/
+/out/
+/jc_build/
+/**/资源/
+/PInvokeLib/*.dll
