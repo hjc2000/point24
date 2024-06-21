@@ -1,7 +1,7 @@
 #include"Point24Solver.h"
 #include<algorithm>
-#include<base/BaseConverter.h>
-#include<base/tinyexpr.h>
+#include<base/math/BaseConverter.h>
+#include<base/math/tinyexpr.h>
 #include<format>
 #include<iostream>
 #include<math.h>
