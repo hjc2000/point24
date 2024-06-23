@@ -42,7 +42,6 @@ int main(int argc, char **argv)
 			nums[i] = cli_numbers[i];
 		}
 
-		cout << "经过如下的计算即可得到 24：" << endl;
 		cout << Point24Solver::Solve(nums) << endl;
 		return 0;
 	}
