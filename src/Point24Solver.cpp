@@ -1,10 +1,10 @@
-#include"Point24Solver.h"
-#include<algorithm>
-#include<base/math/BaseConverter.h>
-#include<base/math/tinyexpr.h>
-#include<format>
-#include<iostream>
-#include<math.h>
+#include "Point24Solver.h"
+#include <algorithm>
+#include <base/math/BaseConverter.h>
+#include <base/math/tinyexpr.h>
+#include <format>
+#include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -13,21 +13,21 @@ std::string Point24Solver::OperatorToString(uint8_t op)
 	switch (op)
 	{
 	case 0:
-		{
-			return "+";
-		}
+	{
+		return "+";
+	}
 	case 1:
-		{
-			return "-";
-		}
+	{
+		return "-";
+	}
 	case 2:
-		{
-			return "*";
-		}
+	{
+		return "*";
+	}
 	case 3:
-		{
-			return "/";
-		}
+	{
+		return "/";
+	}
 	}
 
 	throw std::invalid_argument("未知的运算符");
@@ -35,8 +35,7 @@ std::string Point24Solver::OperatorToString(uint8_t op)
 
 std::string Point24Solver::GetExpression(
 	std::array<uint8_t, 4> const &nums,
-	std::vector<uint8_t> const &operators
-)
+	std::vector<uint8_t> const &operators)
 {
 	return std::format(
 		"{} {} {} {} {} {} {}",
@@ -46,8 +45,7 @@ std::string Point24Solver::GetExpression(
 		OperatorToString(operators[1]),
 		nums[2],
 		OperatorToString(operators[2]),
-		nums[3]
-	);
+		nums[3]);
 }
 
 std::string Point24Solver::TryAllOperatorCombinations(std::array<uint8_t, 4> const &nums)
