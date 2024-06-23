@@ -1,4 +1,4 @@
-﻿#include <CLI/CLI.hpp>
+#include <CLI/CLI.hpp>
 #include <Point24Solver.h>
 #include <iostream>
 #include <stdint.h>
