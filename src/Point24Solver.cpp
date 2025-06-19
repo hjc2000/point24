@@ -1,11 +1,9 @@
 #include "Point24Solver.h"
+#include "base/math/number_base.h"
+#include "base/math/tinyexpr.h"
 #include <algorithm>
-#include <base/math/number_base.h>
-#include <base/math/tinyexpr.h>
+#include <cmath>
 #include <format>
-#include <math.h>
-
-using namespace std;
 
 std::string Point24Solver::OperatorToString(uint8_t op)
 {

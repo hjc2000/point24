@@ -1,6 +1,6 @@
-#include <CLI/CLI.hpp>
+#include "CLI/CLI.hpp"
+#include "Point24Solver.h"
 #include <iostream>
-#include <Point24Solver.h>
 #include <stdint.h>
 
 int main(int argc, char **argv)
