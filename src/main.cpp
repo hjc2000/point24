@@ -1,7 +1,7 @@
 #include "CLI/CLI.hpp"
 #include "Point24Solver.h"
+#include <cstdint>
 #include <iostream>
-#include <stdint.h>
 
 int main(int argc, char **argv)
 {
